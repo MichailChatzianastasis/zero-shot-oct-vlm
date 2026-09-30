@@ -7,6 +7,7 @@ All resampling is paired and stratified by reference diagnosis.
 
 from itertools import combinations
 import json
+import re
 from pathlib import Path
 from statistics import NormalDist
 
@@ -488,8 +489,18 @@ def two_model_agreement_statistics(aligned):
     return pd.DataFrame(rows)
 
 
+# Matched as whole words so that "dome-shaped" does not count as "ped"
+# and "abnormal" does not count as "normal".
+WHOLE_WORD_TERMS = {"ped", "normal"}
+
+
 def term_hit(text, terms):
-    return any(term in text for term in terms)
+    return any(
+        re.search(rf"\b{re.escape(term)}\b", text)
+        if term in WHOLE_WORD_TERMS
+        else term in text
+        for term in terms
+    )
 
 
 def rationale_keyword_statistics(dataframes):
