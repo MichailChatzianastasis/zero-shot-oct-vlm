@@ -1,0 +1,10 @@
+{
+  "model_a": "Gemini-3-Flash",
+  "model_b": "GPT-5.4-mini",
+  "n": 919,
+  "agreement_rate": 0.6311207834602829,
+  "accuracy_when_agree": 0.9137931034482759,
+  "disagreement_rate": 0.36887921653971706,
+  "model_a_accuracy_on_disagreement": 0.8407079646017699,
+  "model_b_accuracy_on_disagreement": 0.07669616519174041
+}

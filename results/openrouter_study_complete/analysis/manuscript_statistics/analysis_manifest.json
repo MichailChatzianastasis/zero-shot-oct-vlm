@@ -1,0 +1,11 @@
+{
+  "confidence_level": 0.95,
+  "accuracy_and_proportion_intervals": "Wilson score",
+  "f1_and_accuracy_difference_intervals": "paired stratified percentile bootstrap",
+  "bootstrap_replicates": 10000,
+  "bootstrap_seed": 20260921,
+  "paired_test": "exact McNemar test",
+  "multiple_testing": "Holm correction across three model pairs",
+  "statistical_unit": "one image per independent patient, as confirmed by study team",
+  "important_limitation": "intervals quantify benchmark sampling uncertainty, not API stochasticity or temporal model-version variability"
+}

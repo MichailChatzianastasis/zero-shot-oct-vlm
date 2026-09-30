@@ -1,0 +1,248 @@
+{
+  "GPT-5.4-mini": [
+    [
+      "of the neurosensory retina",
+      204
+    ],
+    [
+      "the neurosensory retina with",
+      194
+    ],
+    [
+      "neurosensory retina with clear",
+      161
+    ],
+    [
+      "elevation of the neurosensory",
+      159
+    ],
+    [
+      "consistent with macular hole",
+      157
+    ],
+    [
+      "or full-thickness macular defect",
+      146
+    ],
+    [
+      "intraretinal cysts or full-thickness",
+      143
+    ],
+    [
+      "without intraretinal cysts or",
+      136
+    ],
+    [
+      "intraretinal cysts subretinal fluid",
+      126
+    ],
+    [
+      "with clear hyporeflective subretinal",
+      120
+    ],
+    [
+      "clear hyporeflective subretinal fluid",
+      112
+    ],
+    [
+      "hyporeflective subretinal fluid space",
+      108
+    ],
+    [
+      "of the rpe with",
+      106
+    ],
+    [
+      "consistent with diabetic macular",
+      105
+    ],
+    [
+      "with diabetic macular edema",
+      105
+    ],
+    [
+      "subretinal fluid space and",
+      105
+    ],
+    [
+      "retina with clear hyporeflective",
+      104
+    ],
+    [
+      "preserved retinal layers without",
+      97
+    ],
+    [
+      "dome-shaped elevation of the",
+      90
+    ],
+    [
+      "with normal foveal depression",
+      90
+    ]
+  ],
+  "Gemini-3-Flash": [
+    [
+      "retinal pigment epithelium rpe",
+      522
+    ],
+    [
+      "the retinal pigment epithelium",
+      514
+    ],
+    [
+      "the oct image shows",
+      499
+    ],
+    [
+      "the oct scan shows",
+      402
+    ],
+    [
+      "intraretinal or subretinal fluid",
+      336
+    ],
+    [
+      "evidence of intraretinal or",
+      335
+    ],
+    [
+      "of intraretinal or subretinal",
+      335
+    ],
+    [
+      "no evidence of intraretinal",
+      270
+    ],
+    [
+      "there is no evidence",
+      264
+    ],
+    [
+      "is no evidence of",
+      264
+    ],
+    [
+      "of the retinal pigment",
+      248
+    ],
+    [
+      "oct image shows significant",
+      191
+    ],
+    [
+      "shows healthy retinal profile",
+      186
+    ],
+    [
+      "healthy retinal profile with",
+      186
+    ],
+    [
+      "oct scan shows healthy",
+      174
+    ],
+    [
+      "scan shows healthy retinal",
+      174
+    ],
+    [
+      "foveal depression all retinal",
+      171
+    ],
+    [
+      "depression all retinal layers",
+      171
+    ],
+    [
+      "all retinal layers including",
+      171
+    ],
+    [
+      "retinal layers including the",
+      171
+    ]
+  ],
+  "Llama-3.2-11B-Vision": [
+    [
+      "in the subretinal space",
+      1598
+    ],
+    [
+      "the subretinal space disruption",
+      1577
+    ],
+    [
+      "subretinal or intraretinal fluid",
+      1463
+    ],
+    [
+      "disruption or elevation of",
+      1462
+    ],
+    [
+      "or elevation of the",
+      1462
+    ],
+    [
+      "or intraretinal fluid accumulation",
+      1461
+    ],
+    [
+      "fluid in the subretinal",
+      1459
+    ],
+    [
+      "hyperreflective material or fluid",
+      1458
+    ],
+    [
+      "material or fluid in",
+      1458
+    ],
+    [
+      "or fluid in the",
+      1458
+    ],
+    [
+      "subretinal space disruption or",
+      1454
+    ],
+    [
+      "space disruption or elevation",
+      1454
+    ],
+    [
+      "are consistent with cnv",
+      1195
+    ],
+    [
+      "presence of neovascular membrane",
+      1095
+    ],
+    [
+      "layer subretinal or intraretinal",
+      1070
+    ],
+    [
+      "rpe layer subretinal or",
+      1068
+    ],
+    [
+      "intraretinal fluid accumulation and",
+      1068
+    ],
+    [
+      "fluid accumulation and presence",
+      1066
+    ],
+    [
+      "accumulation and presence of",
+      1066
+    ],
+    [
+      "and presence of neovascular",
+      1066
+    ]
+  ]
+}

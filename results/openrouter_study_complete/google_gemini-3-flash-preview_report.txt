@@ -1,0 +1,16 @@
+Model: google/gemini-3-flash-preview
+Accuracy: 0.8868
+Valid predictions: 919/919
+
+              precision    recall  f1-score   support
+
+         CNV       0.76      0.74      0.75       158
+      DRUSEN       0.85      0.92      0.88       154
+         DME       0.87      0.92      0.89       154
+         CSR       0.98      0.76      0.85       140
+          MH       0.99      0.99      0.99       141
+      NORMAL       0.91      0.98      0.94       172
+
+    accuracy                           0.89       919
+   macro avg       0.89      0.89      0.89       919
+weighted avg       0.89      0.89      0.89       919

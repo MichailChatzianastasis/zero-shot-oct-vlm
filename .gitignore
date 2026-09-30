@@ -1,0 +1,14 @@
+.env
+.DS_Store
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Clinical images must never be committed
+datasets/
+*.jpg
+*.jpeg
+*.JPG
+*.JPEG
+*.xlsx

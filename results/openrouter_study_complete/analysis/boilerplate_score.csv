@@ -1,0 +1,4 @@
+model,top20_4gram_coverage_mean,top20_4gram_coverage_median,example_top_4grams
+GPT-5.4-mini,0.13252718270643074,0.07142857142857142,of the neurosensory retina | the neurosensory retina with | neurosensory retina with clear | elevation of the neurosensory | consistent with macular hole
+Gemini-3-Flash,0.14791121363259202,0.10416666666666667,retinal pigment epithelium rpe | the retinal pigment epithelium | the oct image shows | the oct scan shows | intraretinal or subretinal fluid
+Llama-3.2-11B-Vision,0.4199155017899956,0.5333333333333333,in the subretinal space | the subretinal space disruption | subretinal or intraretinal fluid | disruption or elevation of | or elevation of the
