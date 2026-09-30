@@ -21,6 +21,7 @@ openrouter_study.py                 # evaluation: sends each image + prompt to e
 analysis_manuscript_statistics.py   # manuscript statistics: Wilson and bootstrap CIs, McNemar/Holm, keyword sensitivity
 analysis_openrouter_study.py        # per-class metrics, agreement, summary figures
 analysis_openrouter_text.py         # exploratory analysis of the models' explanations
+make_figure2.py                     # manuscript Figure 2: row-normalised confusion matrices
 requirements.txt
 results/openrouter_study_complete/
 ├── *_predictions.csv               # one row per image: reference label, prediction, explanation, raw response, tokens
