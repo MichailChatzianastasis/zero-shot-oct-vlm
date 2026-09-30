@@ -56,7 +56,7 @@ def main():
     cbar.outline.set_linewidth(0.5)
 
     fig.savefig(OUT_DIR / "figure2_confusion_matrices.pdf")
-    fig.savefig(OUT_DIR / "figure2_confusion_matrices.png", dpi=300)
+    fig.savefig(OUT_DIR / "figure2_confusion_matrices.png", dpi=600)
     fig.savefig(OUT_DIR / "figure2_confusion_matrices.tiff", dpi=600, pil_kwargs={"compression": "tiff_lzw"})
     print("Figure 2 written to", OUT_DIR)
 
