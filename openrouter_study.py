@@ -1,8 +1,9 @@
 """
 Multi-model OCT classification study using OpenRouter API.
 
-Evaluates multiple vision-language models on OCT image classification
-(CNV vs DRUSEN vs NORMAL) through OpenRouter's unified API.
+Evaluates vision-language models on zero-shot six-class retinal OCT
+classification (CNV, drusen, DME, CSR, macular hole, normal) through
+OpenRouter's unified API.
 """
 
 import os
@@ -240,7 +241,7 @@ def parse_response(content):
 
 
 def collect_samples(dataset_dir, samples_per_class=None, seed=42):
-    """Collect image paths and labels from the external dataset structure."""
+    """Collect image paths and labels from the six class folders."""
     samples = []
     for folder_name, class_name in FOLDER_TO_CLASS.items():
         class_dir = Path(dataset_dir) / folder_name
@@ -425,7 +426,6 @@ def main():
     DEFAULT_MODELS = [
         "openai/gpt-5.4-mini",
         "google/gemini-3-flash-preview",
-        #"google/gemma-3-27b-it:free",
         "meta-llama/llama-3.2-11b-vision-instruct",
     ]
     models_list = "\n".join(f"  - {m}" for m in DEFAULT_MODELS)

@@ -34,8 +34,8 @@ MODELS = {
     "Llama-3.2-11B-Vision": "meta-llama_llama-3.2-11b-vision-instruct_predictions.csv",
 }
 
-# The two proprietary models we report on in the abstract; Llama is included
-# only in the boilerplate / lexical-diversity comparison as a sanity baseline.
+# Llama is included only in the boilerplate / lexical-diversity comparison
+# because it labelled almost every image as CNV.
 FOCUS_MODELS = ["Gemini-3-Flash", "GPT-5.4-mini"]
 
 # Clinical-feature vocabulary organised per class.  Matches are case-insensitive

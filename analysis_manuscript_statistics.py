@@ -31,8 +31,8 @@ N_BOOTSTRAP = 10_000
 RANDOM_SEED = 20260921
 CONFIDENCE = 0.95
 
-# Broad vocabulary used in the submitted-abstract analysis. Several terms,
-# such as "subretinal fluid", are shared by more than one diagnosis.
+# Broad diagnosis-associated vocabulary. Several terms, such as
+# "subretinal fluid", are shared by more than one diagnosis.
 BROAD_CLASS_TERMS = {
     "CNV": [
         "choroidal neovascular",

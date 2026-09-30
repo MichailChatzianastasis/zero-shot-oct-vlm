@@ -159,9 +159,7 @@ def consensus_analysis(merged):
 
 
 def two_model_consensus(dfs, model_a="Gemini-3-Flash", model_b="GPT-5.4-mini"):
-    """Pairwise agreement / disagreement statistics between the two
-    proprietary models — this is the headline consensus result in the
-    abstract."""
+    """Agreement / disagreement statistics between Gemini and GPT."""
     a = dfs[model_a][["filename", "true_label", "predicted_label", "valid"]].rename(
         columns={"predicted_label": model_a, "valid": f"{model_a}_valid"}
     )
@@ -191,9 +189,8 @@ def two_model_consensus(dfs, model_a="Gemini-3-Flash", model_b="GPT-5.4-mini"):
 # ---------------------------------------------------------------------------
 
 def plot_summary_figure(summary, pc_df, dfs, kappa, out_path):
-    """Main figure focused on the two proprietary models.  Llama is reported
-    only as a negative result and not included in the per-class / confusion
-    panels."""
+    """Summary figure for Gemini and GPT.  Llama is left out of the
+    per-class and confusion panels because its F1 is zero for four classes."""
     sns.set_style("whitegrid")
     fig = plt.figure(figsize=(15, 11))
     gs = fig.add_gridspec(3, 2, hspace=0.55, wspace=0.30)

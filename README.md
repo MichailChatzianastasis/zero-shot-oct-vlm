@@ -32,7 +32,21 @@ results/openrouter_study_complete/
     └── ...                         # per-class metrics, agreement and explanation analyses
 ```
 
-The full system and user prompts are defined at the top of `openrouter_study.py` (`SYSTEM_PROMPT`, `USER_PROMPT`).
+The full system and user prompts (Supplementary Methods S1 of the manuscript) are defined at the top of `openrouter_study.py` (`SYSTEM_PROMPT`, `USER_PROMPT`), exactly as they were sent to the models.
+
+## Where the manuscript results come from
+
+| Manuscript item | File |
+|---|---|
+| Accuracy and macro-F1 with 95% CIs (Abstract, Results, Figure 1a–b) | `results/.../manuscript_statistics/overall_metrics_with_ci.csv` |
+| Paired accuracy differences, McNemar and Holm-adjusted P values | `results/.../manuscript_statistics/paired_model_comparisons.csv` |
+| Class-specific F1 (Figure 1c) and Supplementary Table S3 | `results/.../manuscript_statistics/per_class_metrics_with_ci.csv` |
+| Figure 2 (row-normalised confusion matrices) | `make_figure2.py` → `results/.../figures/` |
+| Directional confusion rates, e.g. CSR classified as CNV | `results/.../manuscript_statistics/confusion_rates_with_ci.csv` |
+| Gemini–GPT agreement | `results/.../manuscript_statistics/two_model_agreement_with_ci.csv` |
+| Keyword analysis of explanations (Supplementary Table S2) | `results/.../manuscript_statistics/rationale_keyword_sensitivity.csv` |
+
+`results/...` stands for `results/openrouter_study_complete/analysis`, except for Figure 2, which is written to `results/openrouter_study_complete/figures`. The specialist review of Gemini's explanations (Table 2 and Figure 3) is not part of this repository.
 
 ## Reproducing the analyses
 
@@ -57,4 +71,4 @@ python openrouter_study.py --dataset_dir path/to/images --output_dir results/my_
 python openrouter_study.py --dataset_dir path/to/images --models anthropic/claude-3.5-sonnet
 ```
 
-Generation settings: temperature 0, maximum 1,024 output tokens, JSON-formatted response with a diagnosis and a short explanation, up to three retries per failed call. Hosted models can change without notice, so re-running the evaluation may not reproduce the saved predictions exactly.
+Generation settings: temperature 0, maximum 1,024 output tokens, JSON-formatted response with a diagnosis and a short explanation, and up to three attempts per image if the API call fails. Hosted models can change without notice, so re-running the evaluation may not reproduce the saved predictions exactly.
